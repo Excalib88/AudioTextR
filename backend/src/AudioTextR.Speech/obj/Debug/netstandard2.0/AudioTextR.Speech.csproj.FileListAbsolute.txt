@@ -4,3 +4,6 @@ D:\Project\AudioTextR\backend\src\AudioTextR.Speech\obj\Debug\netstandard2.0\Aud
 D:\Project\AudioTextR\backend\src\AudioTextR.Speech\obj\Debug\netstandard2.0\AudioTextR.Speech.AssemblyInfoInputs.cache
 D:\Project\AudioTextR\backend\src\AudioTextR.Speech\obj\Debug\netstandard2.0\AudioTextR.Speech.AssemblyInfo.cs
 D:\Project\AudioTextR\backend\src\AudioTextR.Speech\obj\Debug\netstandard2.0\AudioTextR.Speech.csprojAssemblyReference.cache
+D:\Project\AudioTextR\backend\src\AudioTextR.Speech\bin\Debug\netstandard2.0\AudioTextR.Speech.pdb
+D:\Project\AudioTextR\backend\src\AudioTextR.Speech\obj\Debug\netstandard2.0\AudioTextR.Speech.dll
+D:\Project\AudioTextR\backend\src\AudioTextR.Speech\obj\Debug\netstandard2.0\AudioTextR.Speech.pdb

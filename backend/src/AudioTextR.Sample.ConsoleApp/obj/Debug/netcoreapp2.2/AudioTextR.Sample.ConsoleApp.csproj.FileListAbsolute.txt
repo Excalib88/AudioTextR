@@ -14,3 +14,4 @@ D:\Project\AudioTextR\backend\src\AudioTextR.Sample.ConsoleApp\obj\Debug\netcore
 D:\Project\AudioTextR\backend\src\AudioTextR.Sample.ConsoleApp\obj\Debug\netcoreapp2.2\AudioTextR.Sample.ConsoleApp.csproj.CopyComplete
 D:\Project\AudioTextR\backend\src\AudioTextR.Sample.ConsoleApp\obj\Debug\netcoreapp2.2\AudioTextR.Sample.ConsoleApp.dll
 D:\Project\AudioTextR\backend\src\AudioTextR.Sample.ConsoleApp\obj\Debug\netcoreapp2.2\AudioTextR.Sample.ConsoleApp.pdb
+D:\Project\AudioTextR\backend\src\AudioTextR.Sample.ConsoleApp\bin\Debug\netcoreapp2.2\Audio\Recording (2).wav
