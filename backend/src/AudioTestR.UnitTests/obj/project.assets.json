@@ -1587,7 +1587,8 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "AudioTextR.Core.Abstractions": "1.0.0",
-          "Microsoft.Extensions.DependencyInjection": "2.2.0"
+          "Microsoft.Extensions.DependencyInjection": "2.2.0",
+          "Newtonsoft.Json": "12.0.3"
         },
         "compile": {
           "bin/placeholder/AudioTextR.Core.dll": {}
