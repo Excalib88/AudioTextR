@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.2",
-    "signature": "93ae021664ecc2e228f55d7e7aa66e40887b6c35"
+    "signature": "c5c071c5ee8442b6181fec8afd5b036299a73d34"
   },
   "compilationOptions": {},
   "targets": {
@@ -34,27 +34,29 @@
           }
         }
       },
+      "Newtonsoft.Json/12.0.3": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.0.3.23909"
+          }
+        }
+      },
       "AudioTextR.Core/1.0.0": {
         "dependencies": {
           "AudioTextR.Core.Abstractions": "1.0.0",
-          "Microsoft.Extensions.DependencyInjection": "3.0.0",
-          "Newtonsoft.Json": "9.0.0.0"
+          "Microsoft.Extensions.DependencyInjection": "3.0.0"
         },
         "runtime": {
           "AudioTextR.Core.dll": {}
         }
       },
       "AudioTextR.Core.Abstractions/1.0.0": {
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.3"
+        },
         "runtime": {
           "AudioTextR.Core.Abstractions.dll": {}
-        }
-      },
-      "Newtonsoft.Json.Reference/9.0.0.0": {
-        "runtime": {
-          "Newtonsoft.Json.dll": {
-            "assemblyVersion": "9.0.0.0",
-            "fileVersion": "9.0.1.19813"
-          }
         }
       }
     }
@@ -79,6 +81,13 @@
       "path": "microsoft.extensions.dependencyinjection.abstractions/3.0.0",
       "hashPath": "microsoft.extensions.dependencyinjection.abstractions.3.0.0.nupkg.sha512"
     },
+    "Newtonsoft.Json/12.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
+      "path": "newtonsoft.json/12.0.3",
+      "hashPath": "newtonsoft.json.12.0.3.nupkg.sha512"
+    },
     "AudioTextR.Core/1.0.0": {
       "type": "project",
       "serviceable": false,
@@ -86,11 +95,6 @@
     },
     "AudioTextR.Core.Abstractions/1.0.0": {
       "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Newtonsoft.Json.Reference/9.0.0.0": {
-      "type": "reference",
       "serviceable": false,
       "sha512": ""
     }

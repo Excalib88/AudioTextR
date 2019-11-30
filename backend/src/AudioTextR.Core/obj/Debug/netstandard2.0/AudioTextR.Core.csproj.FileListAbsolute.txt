@@ -1,6 +1,4 @@
 D:\Project\AudioTextR\backend\src\AudioTextR.Core\bin\Debug\netstandard2.0\AudioTextR.Core.Abstractions.dll
-D:\Project\AudioTextR\backend\src\AudioTextR.Core\bin\Debug\netstandard2.0\Newtonsoft.Json.dll
-D:\Project\AudioTextR\backend\src\AudioTextR.Core\bin\Debug\netstandard2.0\Newtonsoft.Json.xml
 D:\Project\AudioTextR\backend\src\AudioTextR.Core\obj\Debug\netstandard2.0\AudioTextR.Core.csprojAssemblyReference.cache
 D:\Project\AudioTextR\backend\src\AudioTextR.Core\obj\Debug\netstandard2.0\AudioTextR.Core.csproj.CoreCompileInputs.cache
 D:\Project\AudioTextR\backend\src\AudioTextR.Core\obj\Debug\netstandard2.0\AudioTextR.Core.AssemblyInfoInputs.cache

@@ -9,9 +9,9 @@ namespace AudioTextR.Core.Abstractions
 {
     public interface ISpeechService
     {
-        Task<IRecognizeResponse> Recognize(string audioPath);
-        Task<IRecognizeResponse> Recognize(byte[] binaryAudio);
-        Task<IRecognizeResponse> Recognize(Stream audioStream);
+        Task<RecognizeResponse> Recognize(string audioPath);
+        Task<RecognizeResponse> Recognize(byte[] binaryAudio);
+        Task<RecognizeResponse> Recognize(Stream audioStream);
 
         Task<T> Synthesize<T>(string text);
     }

@@ -20,7 +20,7 @@ namespace AudioTextR.Core.Services
             _httpClient = httpClient;
         }
 
-        public async Task<IRecognizeResponse> Recognize(string audioPath)
+        public async Task<RecognizeResponse> Recognize(string audioPath)
         {
             using (var fs = File.OpenRead(audioPath))
             {
@@ -29,23 +29,23 @@ namespace AudioTextR.Core.Services
                 var response = await _httpClient.PostAsync("speech?v=20170307", content);
                 var responseContent = await response.Content.ReadAsStringAsync();
 
-                return JsonConvert.DeserializeObject<IRecognizeResponse>(responseContent);
+                return JsonConvert.DeserializeObject<RecognizeResponse>(responseContent);
             }
         }
 
-        public Task<IRecognizeResponse> Recognize(byte[] binaryAudio)
+        public Task<RecognizeResponse> Recognize(byte[] binaryAudio)
         {
             throw new NotImplementedException();
         }
 
-        public async Task<IRecognizeResponse> Recognize(Stream audioStream)
+        public async Task<RecognizeResponse> Recognize(Stream audioStream)
         {
             var content = new StreamContent(audioStream);
             content.Headers.ContentType = new MediaTypeHeaderValue("audio/wav");
             var response = await _httpClient.PostAsync("speech?v=20170307", content);
             var responseContent = await response.Content.ReadAsStringAsync();
 
-            return JsonConvert.DeserializeObject<IRecognizeResponse>(responseContent);
+            return JsonConvert.DeserializeObject<RecognizeResponse>(responseContent);
         }
 
         public Task<T> Synthesize<T>(string text)
