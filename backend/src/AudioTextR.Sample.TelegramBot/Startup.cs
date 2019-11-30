@@ -42,7 +42,7 @@ namespace AudioTextR.Sample.TelegramBot
 
         public async void Configure(IApplicationBuilder app, IHostingEnvironment env, IServiceProvider serviceProvider)
         {
-            await serviceProvider.GetService<ITelegramBotClient>().SetWebhookAsync("https адрес от Ngrok сервиса");
+            await serviceProvider.GetService<ITelegramBotClient>().SetWebhookAsync(Configuration["TelegramApi:WebHook"]);
             app.UseMvc();
         }
     }
