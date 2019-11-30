@@ -13,4 +13,10 @@
     <ProjectReference Include="..\AudioTextR.Core\AudioTextR.Core.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="Audio\Recording %282%29.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
