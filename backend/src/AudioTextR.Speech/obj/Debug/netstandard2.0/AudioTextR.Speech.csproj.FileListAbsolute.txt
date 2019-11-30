@@ -1,0 +1,6 @@
+D:\Project\AudioTextR\backend\src\AudioTextR.Speech\bin\Debug\netstandard2.0\AudioTextR.Speech.deps.json
+D:\Project\AudioTextR\backend\src\AudioTextR.Speech\bin\Debug\netstandard2.0\AudioTextR.Speech.dll
+D:\Project\AudioTextR\backend\src\AudioTextR.Speech\obj\Debug\netstandard2.0\AudioTextR.Speech.csproj.CoreCompileInputs.cache
+D:\Project\AudioTextR\backend\src\AudioTextR.Speech\obj\Debug\netstandard2.0\AudioTextR.Speech.AssemblyInfoInputs.cache
+D:\Project\AudioTextR\backend\src\AudioTextR.Speech\obj\Debug\netstandard2.0\AudioTextR.Speech.AssemblyInfo.cs
+D:\Project\AudioTextR\backend\src\AudioTextR.Speech\obj\Debug\netstandard2.0\AudioTextR.Speech.csprojAssemblyReference.cache

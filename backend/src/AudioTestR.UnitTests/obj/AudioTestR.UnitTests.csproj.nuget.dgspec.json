@@ -1,0 +1,191 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Project\\AudioTextR\\backend\\src\\AudioTestR.UnitTests\\AudioTestR.UnitTests.csproj": {}
+  },
+  "projects": {
+    "D:\\Project\\AudioTextR\\backend\\src\\AudioTestR.UnitTests\\AudioTestR.UnitTests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Project\\AudioTextR\\backend\\src\\AudioTestR.UnitTests\\AudioTestR.UnitTests.csproj",
+        "projectName": "AudioTestR.UnitTests",
+        "projectPath": "D:\\Project\\AudioTextR\\backend\\src\\AudioTestR.UnitTests\\AudioTestR.UnitTests.csproj",
+        "packagesPath": "C:\\Users\\Пользователь\\.nuget\\packages\\",
+        "outputPath": "D:\\Project\\AudioTextR\\backend\\src\\AudioTestR.UnitTests\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Пользователь\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "D:\\Project\\AudioTextR\\backend\\src\\AudioTextR.Core.Abstractions\\AudioTextR.Core.Abstractions.csproj": {
+                "projectPath": "D:\\Project\\AudioTextR\\backend\\src\\AudioTextR.Core.Abstractions\\AudioTextR.Core.Abstractions.csproj"
+              },
+              "D:\\Project\\AudioTextR\\backend\\src\\AudioTextR.Core\\AudioTextR.Core.csproj": {
+                "projectPath": "D:\\Project\\AudioTextR\\backend\\src\\AudioTextR.Core\\AudioTextR.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[15.9.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[3.11.0, )"
+            },
+            "nunit": {
+              "target": "Package",
+              "version": "[3.11.0, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "D:\\Project\\AudioTextR\\backend\\src\\AudioTextR.Core.Abstractions\\AudioTextR.Core.Abstractions.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Project\\AudioTextR\\backend\\src\\AudioTextR.Core.Abstractions\\AudioTextR.Core.Abstractions.csproj",
+        "projectName": "AudioTextR.Core.Abstractions",
+        "projectPath": "D:\\Project\\AudioTextR\\backend\\src\\AudioTextR.Core.Abstractions\\AudioTextR.Core.Abstractions.csproj",
+        "packagesPath": "C:\\Users\\Пользователь\\.nuget\\packages\\",
+        "outputPath": "D:\\Project\\AudioTextR\\backend\\src\\AudioTextR.Core.Abstractions\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Пользователь\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "D:\\Project\\AudioTextR\\backend\\src\\AudioTextR.Core\\AudioTextR.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Project\\AudioTextR\\backend\\src\\AudioTextR.Core\\AudioTextR.Core.csproj",
+        "projectName": "AudioTextR.Core",
+        "projectPath": "D:\\Project\\AudioTextR\\backend\\src\\AudioTextR.Core\\AudioTextR.Core.csproj",
+        "packagesPath": "C:\\Users\\Пользователь\\.nuget\\packages\\",
+        "outputPath": "D:\\Project\\AudioTextR\\backend\\src\\AudioTextR.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Пользователь\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "D:\\Project\\AudioTextR\\backend\\src\\AudioTextR.Core.Abstractions\\AudioTextR.Core.Abstractions.csproj": {
+                "projectPath": "D:\\Project\\AudioTextR\\backend\\src\\AudioTextR.Core.Abstractions\\AudioTextR.Core.Abstractions.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

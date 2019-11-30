@@ -1,0 +1,68 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Project\\AudioTextR\\backend\\src\\AudioTextR.Speech\\AudioTextR.Speech.csproj": {}
+  },
+  "projects": {
+    "D:\\Project\\AudioTextR\\backend\\src\\AudioTextR.Speech\\AudioTextR.Speech.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Project\\AudioTextR\\backend\\src\\AudioTextR.Speech\\AudioTextR.Speech.csproj",
+        "projectName": "AudioTextR.Speech",
+        "projectPath": "D:\\Project\\AudioTextR\\backend\\src\\AudioTextR.Speech\\AudioTextR.Speech.csproj",
+        "packagesPath": "C:\\Users\\Пользователь\\.nuget\\packages\\",
+        "outputPath": "D:\\Project\\AudioTextR\\backend\\src\\AudioTextR.Speech\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Пользователь\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Google.Cloud.Speech.V1": {
+              "target": "Package",
+              "version": "[1.3.0-beta03, )"
+            },
+            "Google.Cloud.TextToSpeech.V1": {
+              "target": "Package",
+              "version": "[1.1.0-beta01, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

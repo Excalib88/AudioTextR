@@ -1,0 +1,9 @@
+D:\Project\AudioTextR\backend\src\AudioTextR.Core.Abstractions\bin\Debug\netstandard2.0\AudioTextR.Core.Abstractions.deps.json
+D:\Project\AudioTextR\backend\src\AudioTextR.Core.Abstractions\bin\Debug\netstandard2.0\AudioTextR.Core.Abstractions.dll
+D:\Project\AudioTextR\backend\src\AudioTextR.Core.Abstractions\bin\Debug\netstandard2.0\AudioTextR.Core.Abstractions.pdb
+D:\Project\AudioTextR\backend\src\AudioTextR.Core.Abstractions\obj\Debug\netstandard2.0\AudioTextR.Core.Abstractions.csprojAssemblyReference.cache
+D:\Project\AudioTextR\backend\src\AudioTextR.Core.Abstractions\obj\Debug\netstandard2.0\AudioTextR.Core.Abstractions.csproj.CoreCompileInputs.cache
+D:\Project\AudioTextR\backend\src\AudioTextR.Core.Abstractions\obj\Debug\netstandard2.0\AudioTextR.Core.Abstractions.AssemblyInfoInputs.cache
+D:\Project\AudioTextR\backend\src\AudioTextR.Core.Abstractions\obj\Debug\netstandard2.0\AudioTextR.Core.Abstractions.AssemblyInfo.cs
+D:\Project\AudioTextR\backend\src\AudioTextR.Core.Abstractions\obj\Debug\netstandard2.0\AudioTextR.Core.Abstractions.dll
+D:\Project\AudioTextR\backend\src\AudioTextR.Core.Abstractions\obj\Debug\netstandard2.0\AudioTextR.Core.Abstractions.pdb

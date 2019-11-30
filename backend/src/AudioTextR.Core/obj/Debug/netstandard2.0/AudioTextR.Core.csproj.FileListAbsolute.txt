@@ -1,0 +1,14 @@
+D:\Project\AudioTextR\backend\src\AudioTextR.Core\bin\Debug\netstandard2.0\AudioTextR.Core.Abstractions.dll
+D:\Project\AudioTextR\backend\src\AudioTextR.Core\bin\Debug\netstandard2.0\Newtonsoft.Json.dll
+D:\Project\AudioTextR\backend\src\AudioTextR.Core\bin\Debug\netstandard2.0\Newtonsoft.Json.xml
+D:\Project\AudioTextR\backend\src\AudioTextR.Core\obj\Debug\netstandard2.0\AudioTextR.Core.csprojAssemblyReference.cache
+D:\Project\AudioTextR\backend\src\AudioTextR.Core\obj\Debug\netstandard2.0\AudioTextR.Core.csproj.CoreCompileInputs.cache
+D:\Project\AudioTextR\backend\src\AudioTextR.Core\obj\Debug\netstandard2.0\AudioTextR.Core.AssemblyInfoInputs.cache
+D:\Project\AudioTextR\backend\src\AudioTextR.Core\obj\Debug\netstandard2.0\AudioTextR.Core.AssemblyInfo.cs
+D:\Project\AudioTextR\backend\src\AudioTextR.Core\bin\Debug\netstandard2.0\AudioTextR.Core.deps.json
+D:\Project\AudioTextR\backend\src\AudioTextR.Core\bin\Debug\netstandard2.0\AudioTextR.Core.dll
+D:\Project\AudioTextR\backend\src\AudioTextR.Core\bin\Debug\netstandard2.0\AudioTextR.Core.pdb
+D:\Project\AudioTextR\backend\src\AudioTextR.Core\bin\Debug\netstandard2.0\AudioTextR.Core.Abstractions.pdb
+D:\Project\AudioTextR\backend\src\AudioTextR.Core\obj\Debug\netstandard2.0\AudioTextR.Core.csproj.CopyComplete
+D:\Project\AudioTextR\backend\src\AudioTextR.Core\obj\Debug\netstandard2.0\AudioTextR.Core.dll
+D:\Project\AudioTextR\backend\src\AudioTextR.Core\obj\Debug\netstandard2.0\AudioTextR.Core.pdb

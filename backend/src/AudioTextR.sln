@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29230.47
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AudioTextR.Core", "AudioTextR.Core\AudioTextR.Core.csproj", "{8BD64689-11E8-4183-8A9F-9AADF62EF06D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AudioTextR.Core.Abstractions", "AudioTextR.Core.Abstractions\AudioTextR.Core.Abstractions.csproj", "{B753A790-DA03-4769-9AA9-8459E573AECF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{A30A856B-C106-4802-8130-068CC0758A0E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AudioTestR.UnitTests", "AudioTestR.UnitTests\AudioTestR.UnitTests.csproj", "{BDF4E00F-7489-46F9-AFAC-59DAA7061604}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AudioTextR.Speech", "AudioTextR.Speech\AudioTextR.Speech.csproj", "{CFD078EE-3CFD-4D5D-9E0C-74E400F3AF73}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AudioTextR.Utils", "AudioTextR.Utils\AudioTextR.Utils.csproj", "{970F5D56-8361-4A02-90C9-4E51BC48C142}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Apps", "Apps", "{945AEEC7-66D8-40D3-8A22-CAD380762D48}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AudioTextR.Sample.ConsoleApp", "AudioTextR.Sample.ConsoleApp\AudioTextR.Sample.ConsoleApp.csproj", "{5A659455-7EE5-4CA4-AEA4-6C11D1A86E4E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8BD64689-11E8-4183-8A9F-9AADF62EF06D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BD64689-11E8-4183-8A9F-9AADF62EF06D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BD64689-11E8-4183-8A9F-9AADF62EF06D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BD64689-11E8-4183-8A9F-9AADF62EF06D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B753A790-DA03-4769-9AA9-8459E573AECF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B753A790-DA03-4769-9AA9-8459E573AECF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B753A790-DA03-4769-9AA9-8459E573AECF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B753A790-DA03-4769-9AA9-8459E573AECF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDF4E00F-7489-46F9-AFAC-59DAA7061604}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDF4E00F-7489-46F9-AFAC-59DAA7061604}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDF4E00F-7489-46F9-AFAC-59DAA7061604}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDF4E00F-7489-46F9-AFAC-59DAA7061604}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFD078EE-3CFD-4D5D-9E0C-74E400F3AF73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFD078EE-3CFD-4D5D-9E0C-74E400F3AF73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFD078EE-3CFD-4D5D-9E0C-74E400F3AF73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFD078EE-3CFD-4D5D-9E0C-74E400F3AF73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{970F5D56-8361-4A02-90C9-4E51BC48C142}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{970F5D56-8361-4A02-90C9-4E51BC48C142}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{970F5D56-8361-4A02-90C9-4E51BC48C142}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{970F5D56-8361-4A02-90C9-4E51BC48C142}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A659455-7EE5-4CA4-AEA4-6C11D1A86E4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A659455-7EE5-4CA4-AEA4-6C11D1A86E4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A659455-7EE5-4CA4-AEA4-6C11D1A86E4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A659455-7EE5-4CA4-AEA4-6C11D1A86E4E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BDF4E00F-7489-46F9-AFAC-59DAA7061604} = {A30A856B-C106-4802-8130-068CC0758A0E}
+		{5A659455-7EE5-4CA4-AEA4-6C11D1A86E4E} = {945AEEC7-66D8-40D3-8A22-CAD380762D48}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4164D404-70F0-4654-B998-AA7D4DFC2E2D}
+	EndGlobalSection
+EndGlobal
