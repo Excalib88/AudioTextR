@@ -17,8 +17,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AudioTextR.Utils", "AudioTe
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Apps", "Apps", "{945AEEC7-66D8-40D3-8A22-CAD380762D48}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AudioTextR.Sample.ConsoleApp", "AudioTextR.Sample.ConsoleApp\AudioTextR.Sample.ConsoleApp.csproj", "{5A659455-7EE5-4CA4-AEA4-6C11D1A86E4E}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AudioTextR.Sample.TelegramBot", "AudioTextR.Sample.TelegramBot\AudioTextR.Sample.TelegramBot.csproj", "{B24D0D09-B2CE-4E79-B35D-CC0100B43D3D}"
 EndProject
 Global
@@ -47,10 +45,6 @@ Global
 		{970F5D56-8361-4A02-90C9-4E51BC48C142}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{970F5D56-8361-4A02-90C9-4E51BC48C142}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{970F5D56-8361-4A02-90C9-4E51BC48C142}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5A659455-7EE5-4CA4-AEA4-6C11D1A86E4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5A659455-7EE5-4CA4-AEA4-6C11D1A86E4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5A659455-7EE5-4CA4-AEA4-6C11D1A86E4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5A659455-7EE5-4CA4-AEA4-6C11D1A86E4E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B24D0D09-B2CE-4E79-B35D-CC0100B43D3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B24D0D09-B2CE-4E79-B35D-CC0100B43D3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B24D0D09-B2CE-4E79-B35D-CC0100B43D3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -61,7 +55,6 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{BDF4E00F-7489-46F9-AFAC-59DAA7061604} = {A30A856B-C106-4802-8130-068CC0758A0E}
-		{5A659455-7EE5-4CA4-AEA4-6C11D1A86E4E} = {945AEEC7-66D8-40D3-8A22-CAD380762D48}
 		{B24D0D09-B2CE-4E79-B35D-CC0100B43D3D} = {945AEEC7-66D8-40D3-8A22-CAD380762D48}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution

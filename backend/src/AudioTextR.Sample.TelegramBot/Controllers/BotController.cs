@@ -25,6 +25,12 @@ namespace AudioTextR.Sample.TelegramBot.Controllers
             _speechService = speechService;
         }
 
+        [HttpGet]
+        public void Get()
+        {
+            Console.WriteLine("asdasdsda");
+        }
+
         [HttpPost("update")]
         public async Task Post([FromBody]Update update)
         {
