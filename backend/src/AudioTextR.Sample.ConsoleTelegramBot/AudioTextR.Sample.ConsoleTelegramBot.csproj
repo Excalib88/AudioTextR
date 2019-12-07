@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="HttpToSocks5Proxy" Version="1.4.0" />
+    <PackageReference Include="Telegram.Bot" Version="15.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AudioTextR.Core.Abstractions\AudioTextR.Core.Abstractions.csproj" />
+    <ProjectReference Include="..\AudioTextR.Core\AudioTextR.Core.csproj" />
+    <ProjectReference Include="..\AudioTextR.Utils\AudioTextR.Utils.csproj" />
+  </ItemGroup>
+
+</Project>

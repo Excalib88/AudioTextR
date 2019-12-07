@@ -7,6 +7,7 @@ using AudioTextR.Core.Abstractions;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Telegram.Bot;
+using Telegram.Bot.Args;
 using Telegram.Bot.Types;
 using Telegram.Bot.Types.Enums;
 
@@ -28,7 +29,33 @@ namespace AudioTextR.Sample.TelegramBot.Controllers
         [HttpGet]
         public void Get()
         {
-            Console.WriteLine("asdasdsda");
+            _client.OnUpdate += async (sender, e) =>
+            {
+                if (e.Update == null) return;
+
+                var message = e.Update.Message;
+
+                if (message?.Type == MessageType.Audio)
+                {
+                    var text = "";
+                    if (message.Audio.Duration < 20)
+                    {
+                        var audioMessageId = message.Audio.FileId;
+
+                        using (var audioStream = new MemoryStream())
+                        {
+                            await _client.GetInfoAndDownloadFileAsync(audioMessageId, new MemoryStream());
+
+                            var result = await _speechService.Recognize(audioStream);
+                            text = result.Text;
+                        }
+                    }
+
+                    await _client.SendTextMessageAsync(message.Chat.Id, text);
+                }
+            };
+
+            _client.StartReceiving();
         }
 
         [HttpPost("update")]

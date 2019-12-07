@@ -11,7 +11,8 @@
         "dependencies": {
           "AudioTextR.Core.Abstractions": "1.0.0",
           "Microsoft.Extensions.DependencyInjection": "2.2.0",
-          "NETStandard.Library": "2.0.3"
+          "NETStandard.Library": "2.0.3",
+          "Newtonsoft.Json": "12.0.3"
         },
         "runtime": {
           "AudioTextR.Core.dll": {}

@@ -14,6 +14,7 @@ using AudioTextR.Core.Extensions;
 using AudioTextR.Core.Abstractions.Models;
 using AudioTextR.Core.Models;
 using Telegram.Bot;
+using MihaZupan;
 
 namespace AudioTextR.Sample.TelegramBot
 {
@@ -29,7 +30,7 @@ namespace AudioTextR.Sample.TelegramBot
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
-            services.AddSingleton<ITelegramBotClient>(new TelegramBotClient(Configuration["TelegramApi:Token"]));
+            services.AddSingleton<ITelegramBotClient>(new TelegramBotClient(Configuration["TelegramApi:Token"], new HttpToSocks5Proxy("183.102.171.77", 8888)));
 
             var recognizeModel = new WitAiModel
             {
@@ -40,9 +41,9 @@ namespace AudioTextR.Sample.TelegramBot
             services.AddAudioTextR(recognizeModel);
         }
 
-        public async void Configure(IApplicationBuilder app, IHostingEnvironment env, IServiceProvider serviceProvider)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, IServiceProvider serviceProvider)
         {
-            await serviceProvider.GetService<ITelegramBotClient>().SetWebhookAsync(Configuration["TelegramApi:WebHook"]);
+            //await serviceProvider.GetService<ITelegramBotClient>();//.SetWebhookAsync("");//Configuration["TelegramApi:WebHook"])
             app.UseMvc();
         }
     }
