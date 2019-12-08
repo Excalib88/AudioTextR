@@ -1,5 +1,4 @@
-﻿using AudioTextR.Core.Abstractions;
-using AudioTextR.Core.Extensions;
+﻿using AudioTextR.Core.Extensions;
 using AudioTextR.Core.Models;
 using AudioTextR.Core.Services;
 using AudioTextR.Utils.Converter;
@@ -8,7 +7,6 @@ using System;
 using System.IO;
 using Telegram.Bot;
 using Telegram.Bot.Args;
-using Telegram.Bot.Types;
 using Telegram.Bot.Types.Enums;
 
 namespace AudioTextR.Sample.ConsoleTelegramBot
