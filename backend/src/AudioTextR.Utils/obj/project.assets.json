@@ -11,28 +11,6 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "NAudio/1.5.0": {
-        "type": "package",
-        "compile": {
-          "lib/NAudio.dll": {}
-        },
-        "runtime": {
-          "lib/NAudio.dll": {}
-        }
-      },
-      "NAudio.Vorbis/1.0.0": {
-        "type": "package",
-        "dependencies": {
-          "NAudio": "1.5.0",
-          "NVorbis": "0.8.4"
-        },
-        "compile": {
-          "lib/net35/NAudio.Vorbis.dll": {}
-        },
-        "runtime": {
-          "lib/net35/NAudio.Vorbis.dll": {}
-        }
-      },
       "NETStandard.Library/2.0.3": {
         "type": "package",
         "dependencies": {
@@ -46,21 +24,6 @@
         },
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
-        }
-      },
-      "NVorbis/0.8.6": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/NVorbis.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/NVorbis.dll": {}
-        }
-      },
-      "NVorbis.NAudioSupport/0.5.6.1": {
-        "type": "package",
-        "dependencies": {
-          "NAudio.Vorbis": "1.0.0"
         }
       }
     }
@@ -79,37 +42,6 @@
         "microsoft.netcore.platforms.1.1.0.nupkg.sha512",
         "microsoft.netcore.platforms.nuspec",
         "runtime.json"
-      ]
-    },
-    "NAudio/1.5.0": {
-      "sha512": "V7kGxjB+pG0wRe9EDe/gnzV/0Vx0U1V81SngpIFEjMOVjrsOf3C3UjZ4tWikzT0+DKAtXkui9e5bqwV1EX3r7g==",
-      "type": "package",
-      "path": "naudio/1.5.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/NAudio.XML",
-        "lib/NAudio.dll",
-        "license.txt",
-        "naudio.1.5.0.nupkg.sha512",
-        "naudio.nuspec"
-      ]
-    },
-    "NAudio.Vorbis/1.0.0": {
-      "sha512": "sQ3gltTm1XcXRuQUI0TpKopq8170rRNLMbJttV6j7MtY6JGLLYVUDMjhbqUpjEgvvWea3v4awYgtC0UOFPUEGw==",
-      "type": "package",
-      "path": "naudio.vorbis/1.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE",
-        "README.md",
-        "lib/NAudio.Vorbis.XML",
-        "lib/NAudio.Vorbis.dll",
-        "lib/net35/NAudio.Vorbis.XML",
-        "lib/net35/NAudio.Vorbis.dll",
-        "naudio.vorbis.1.0.0.nupkg.sha512",
-        "naudio.vorbis.nuspec"
       ]
     },
     "NETStandard.Library/2.0.3": {
@@ -239,40 +171,11 @@
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
-    },
-    "NVorbis/0.8.6": {
-      "sha512": "5+6SN8UA3a3UXGTQtM+cDfvWm+BNqu2CgTjhcOzvLUibSLC5H25OMMS1Z1oRh9KqBkvGb6G9bK/O/UDRCkEXlg==",
-      "type": "package",
-      "path": "nvorbis/0.8.6",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net35/NVorbis.dll",
-        "lib/net35/NVorbis.xml",
-        "lib/netstandard2.0/NVorbis.dll",
-        "lib/netstandard2.0/NVorbis.xml",
-        "nvorbis.0.8.6.nupkg.sha512",
-        "nvorbis.nuspec"
-      ]
-    },
-    "NVorbis.NAudioSupport/0.5.6.1": {
-      "sha512": "HXvNucEH7/UOnUqAy38unhhcIev7/3ypBqjH9snUexcMzlzI/zfCya1GyDRwjHi5fFq8NHYpgFRJAFO5vcTIdA==",
-      "type": "package",
-      "path": "nvorbis.naudiosupport/0.5.6.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "README.txt",
-        "nvorbis.naudiosupport.0.5.6.1.nupkg.sha512",
-        "nvorbis.naudiosupport.nuspec"
-      ]
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
-      "NETStandard.Library >= 2.0.3",
-      "NVorbis >= 0.8.6",
-      "NVorbis.NAudioSupport >= 0.5.6.1"
+      "NETStandard.Library >= 2.0.3"
     ]
   },
   "packageFolders": {
@@ -321,14 +224,6 @@
             "target": "Package",
             "version": "[2.0.3, )",
             "autoReferenced": true
-          },
-          "NVorbis": {
-            "target": "Package",
-            "version": "[0.8.6, )"
-          },
-          "NVorbis.NAudioSupport": {
-            "target": "Package",
-            "version": "[0.5.6.1, )"
           }
         },
         "imports": [
@@ -338,27 +233,5 @@
         "warn": true
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'NAudio 1.5.0' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETStandard,Version=v2.0'. This package may not be fully compatible with your project.",
-      "libraryId": "NAudio",
-      "targetGraphs": [
-        ".NETStandard,Version=v2.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'NAudio.Vorbis 1.0.0' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETStandard,Version=v2.0'. This package may not be fully compatible with your project.",
-      "libraryId": "NAudio.Vorbis",
-      "targetGraphs": [
-        ".NETStandard,Version=v2.0"
-      ]
-    }
-  ]
+  }
 }

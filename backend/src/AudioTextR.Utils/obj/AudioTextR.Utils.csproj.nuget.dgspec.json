@@ -46,14 +46,6 @@
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
-            },
-            "NVorbis": {
-              "target": "Package",
-              "version": "[0.8.6, )"
-            },
-            "NVorbis.NAudioSupport": {
-              "target": "Package",
-              "version": "[0.5.6.1, )"
             }
           },
           "imports": [

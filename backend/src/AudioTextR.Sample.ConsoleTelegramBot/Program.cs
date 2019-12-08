@@ -2,6 +2,9 @@
 using AudioTextR.Core.Models;
 using AudioTextR.Core.Services;
 using AudioTextR.Utils.Converter;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Configuration.FileExtensions;
+using Microsoft.Extensions.Configuration.Json;
 using MihaZupan;
 using System;
 using System.IO;
@@ -17,9 +20,14 @@ namespace AudioTextR.Sample.ConsoleTelegramBot
 
         static void Main(string[] args)
         {
-            var socksProxy = new HttpToSocks5Proxy("212.109.223.75", 8083);
+            var configuration = new ConfigurationBuilder()
+                .SetBasePath(Directory.GetCurrentDirectory())
+                .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
+                .Build();
 
-            bot = new TelegramBotClient("907186419:AAHQrTqp3uN9Dpz_IjZbiDleWpDFDyX9re4", socksProxy);
+            var socksProxy = new HttpToSocks5Proxy(configuration["Proxy:Server"], int.Parse(configuration["Proxy:Port"]));
+
+            bot = new TelegramBotClient(configuration["TelegramApi:Token"], socksProxy);
 
             StartBot();
             

@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.IO;
 
 namespace AudioTextR.Utils.Converter
 {
     public interface IAudioConverter
     {
-        Task<byte[]> FromOggToMp3();
+        Stream FromOggToMp3(string path);
         Stream FromOggToWav(string path);
     }
 }
