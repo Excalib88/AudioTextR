@@ -17,12 +17,11 @@ namespace AudioTextR.Sample.ConsoleTelegramBot
     {
         private static TelegramBotClient bot;
 
-        [Obsolete]
         static void Main(string[] args)
         {
-            var socksProxy = new HttpToSocks5Proxy("132.148.141.237", 61302);
+            var socksProxy = new HttpToSocks5Proxy("212.109.223.75", 8083);
 
-            bot = new TelegramBotClient("907186419:AAHQrTqp3uN9Dpz_IjZbiDleWpDFDyX9re4");
+            bot = new TelegramBotClient("907186419:AAHQrTqp3uN9Dpz_IjZbiDleWpDFDyX9re4", socksProxy);
 
             StartBot();
             
@@ -57,15 +56,12 @@ namespace AudioTextR.Sample.ConsoleTelegramBot
 
                     using (var oggStream = new MemoryStream())
                     {
-                        var fileOgg = await bot.GetFileAsync(audioMessageId);
-                        await bot.DownloadFileAsync(fileOgg.FilePath, oggStream);
-                        //var file = await bot.GetInfoAndDownloadFileAsync(audioMessageId, oggStream);
+                        var file = await bot.GetInfoAndDownloadFileAsync(audioMessageId, oggStream);
+                        var fileName = file.FileId + ".ogg";
+                        await System.IO.File.WriteAllBytesAsync(fileName, oggStream.GetBuffer());
+
                         var converter = new AudioConverter();
-                        using (var fs = new FileStream("file1313.ogg", FileMode.Create, FileAccess.Write))
-                        {
-                            await oggStream.CopyToAsync(fs);
-                        }
-                        using (var fs = new FileStream("file1313.ogg", FileMode.Open, FileAccess.Read))
+                        using (var fs = new FileStream(fileName, FileMode.Open, FileAccess.Read))
                         {
                             var wavStream = converter.FromOggToWav(fs);
                             var result = await speechService.Recognize(wavStream);
