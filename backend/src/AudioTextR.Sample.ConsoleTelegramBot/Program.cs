@@ -63,7 +63,7 @@ namespace AudioTextR.Sample.ConsoleTelegramBot
                         var converter = new AudioConverter();
                         using (var fs = new FileStream(fileName, FileMode.Open, FileAccess.Read))
                         {
-                            var wavStream = converter.FromOggToWav(fs);
+                            var wavStream = converter.FromOggToWav(fileName);
                             var result = await speechService.Recognize(wavStream);
                             text = result.Text;
                         }

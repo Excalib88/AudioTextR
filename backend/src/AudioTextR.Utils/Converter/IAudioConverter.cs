@@ -9,6 +9,6 @@ namespace AudioTextR.Utils.Converter
     public interface IAudioConverter
     {
         Task<byte[]> FromOggToMp3();
-        Stream FromOggToWav(Stream stream);
+        Stream FromOggToWav(string path);
     }
 }

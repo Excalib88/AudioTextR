@@ -44,7 +44,8 @@ namespace AudioTextR.Core.Services
             content.Headers.ContentType = new MediaTypeHeaderValue("audio/wav");
             var response = await _httpClient.PostAsync("speech?v=20170307", content);
             var responseContent = await response.Content.ReadAsStringAsync();
-
+            audioStream.Flush();
+            audioStream.Dispose();
             return JsonConvert.DeserializeObject<RecognizeResponse>(responseContent);
         }
 

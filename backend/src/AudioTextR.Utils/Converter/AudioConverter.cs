@@ -17,12 +17,13 @@ namespace AudioTextR.Utils.Converter
             throw new NotImplementedException();
         }
 
-        public Stream FromOggToWav(Stream stream)
+        public Stream FromOggToWav(string path)
         {
-            
-            //Process.Start("./ffmpeg.ex..e", string.Format(" -i {0} {1}", @"D:\Project\AudioTextR\backend\src\AudioTextR.Sample.ConsoleTelegramBot\bin\Debug\netcoreapp2.2\file1313.ogg", 
-            //    @"D:\Project\AudioTextR\backend\src\AudioTextR.Sample.ConsoleTelegramBot\bin\Debug\netcoreapp2.2\final.wav")).WaitForExit();
-            return new MemoryStream();
+            var finalPath = path.Replace(".ogg", ".wav");
+            Process.Start("./ffmpeg.exe", string.Format($" -i {path} {finalPath}")).WaitForExit();
+
+            return new FileStream(finalPath, FileMode.Open, FileAccess.Read);
+
             //using (var vorbis = new VorbisWaveReader("damir123.ogg"))
             //{
             //    WaveFileWriter.CreateWaveFile("damir.wav", vorbis);
